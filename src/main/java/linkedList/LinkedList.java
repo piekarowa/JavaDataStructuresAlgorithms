@@ -95,7 +95,10 @@ public Node removeLast(){
 }
 
 public void prepend(int value){
-
+        Node newNode = new Node(value);
+if(length == 0){
+    head = newNode;
+}
 }
 
 }
