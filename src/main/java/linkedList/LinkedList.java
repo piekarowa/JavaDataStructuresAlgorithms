@@ -94,4 +94,8 @@ public Node removeLast(){
 
 }
 
+public void prepend(int value){
+
+}
+
 }
