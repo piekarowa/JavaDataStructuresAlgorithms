@@ -1,21 +1,43 @@
 package linkedList;
 
+
+import classes.Node;
+
 public class LinkedList {
 
-    public LinkedList(int value){}
-    //create ne Node
+    private Node head;
+    private Node tail;
+    private int length;
 
+    class Node{
+        int value;
+        Node next;
 
-    public void append(int value){}
-    //create new Node, add Node to end
+        //inner class, nested class
 
+        Node(int value){
+            this.value = value;
+        }
+    }
 
+    public LinkedList(int value){
+Node newNode = new Node(value);
+head = newNode;
+tail = newNode;
+length = 1;
+    }
 
-    public void prepend(int value){}
-    //create new Node, add Node to beginning
-
-//    public boolean insert(int index, int value){}
-    //create ne Node, insert going to create a new node and then insert the node at a particular index
+    public void append(int value){
+        Node newNode = new Node(value);
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        }else{
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
 
 
 
