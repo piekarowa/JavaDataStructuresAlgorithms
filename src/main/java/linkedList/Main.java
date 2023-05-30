@@ -11,7 +11,7 @@ public class Main {
         System.out.println(myLinkedList.removeLast().value);
         //(1) Item - Returns 1 Node
         System.out.println(myLinkedList.removeLast().value);
-        //(0) Items - Returns null
+        //(0) Items - Returns null (without .value())
         System.out.println(myLinkedList.removeLast());
 
     }
